@@ -12,7 +12,6 @@ class ComediansSpider(scrapy.Spider):
         comedians_url = comedians.css('a::attr(href)').extract()
         for comedian_url in comedians_url:
             url = response.urljoin(comedian_url)
-            self.log('Processing url: ' + url)
             yield scrapy.Request(url=url, callback=self.parse_comedian)
 
     def parse_comedian(self, response):
