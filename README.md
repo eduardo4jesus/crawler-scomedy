@@ -1,4 +1,4 @@
-# scomedy-crawler
+# crawler-scomedy
 
 ![Scomdy Logo](http://scomedy.com/themes/scomedy/logo.png)
 
